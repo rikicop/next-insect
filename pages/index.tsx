@@ -9,6 +9,17 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
 
+//Trying styled-components
+/* import styled from "styled-components";
+
+const Title = styled.h1`
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  color: #c01a72;
+`;
+ */
 interface Props {
   posts: [Post];
 }
