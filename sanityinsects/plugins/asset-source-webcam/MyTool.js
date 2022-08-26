@@ -31,8 +31,6 @@ export default function WebcamSource(props) {
   }
   //End Select
   const videoConstraints = {
-    width: 1280,
-    height: 720,
     facingMode: { exact: "environment" }
     //facingMode: { exact: "user" }
 
@@ -45,10 +43,10 @@ export default function WebcamSource(props) {
     >
       <Webcam
         audio={false}
-        height={320}
+        height={600}
         ref={webcamRef}
         screenshotFormat="image/jpeg"
-        width={480}
+        width={680}
         videoConstraints={videoConstraints}
       />
       <Button onClick={handleCapture}>Take a photo!</Button>
